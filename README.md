@@ -9,5 +9,5 @@ At DockerCon 2020 I will be doing some demos, showing folks a process for gettin
 In the meantime, Snyk is available for free if you want to play around.
 
 And here's a random picture of a Doberman, just because:
-(Good dog!)[https://source.unsplash.com/featured/?{doberman}]
+![Good dog!](https://source.unsplash.com/featured/?{doberman})
 
