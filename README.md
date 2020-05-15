@@ -11,3 +11,6 @@ In the meantime, [Snyk is available for free](https://snyk.io/signup) if you wan
 Now here's a random picture of a Doberman, just for grins:
 ![Good dog!](https://source.unsplash.com/featured/?{doberman})
 
+
+
+[snyk.io](https://snyk.io/wp-content/themes/snyk_v2_etyhadar/dist/images/svg/logo.svg)
