@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: alpha-blog
+  labels:
+    app: alpha-blog
+spec:
+  template:
+    metadata:
+      name: alpha-blog-pod
+      labels:
+        app: alpha-blog
+    spec:
+      containers:
+        - name: alpha-blog-container
+          image: avantaditya/alpha-blog
+
+  replicas: 3
+  selector:
+    matchLabels:
+      app: alpha-blog      
