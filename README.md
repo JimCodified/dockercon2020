@@ -13,4 +13,4 @@ Now here's a random picture of a Doberman, just for grins:
 
 
 
-[snyk.io](https://snyk.io/wp-content/themes/snyk_v2_etyhadar/dist/images/svg/logo.svg)
+![snyk.io](https://snyk.io/wp-content/themes/snyk_v2_etyhadar/dist/images/svg/logo.svg)
