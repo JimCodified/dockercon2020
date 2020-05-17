@@ -1,0 +1,114 @@
+$navbar-default-bg: black;
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+#logo {
+  float: left;
+  font-size: 1.5em;
+  color: tomato;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.badge {
+  background-color: lightblue;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.delete_btn {
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+  color: tomato;
+}
+
+.input-checkbox input {
+  width: auto !important;
+}
+
+#logo:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.jumbotran {
+  background-image: asset-url('home_bg.jpg');
+  background-size: cover;
+  height: 600px;
+}
+
+.jumbotran h1 {
+  color: tomato;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: cursive;
+}
+
+.btn-xlarge {
+  background-color: black;
+}
+
+.article-actions {
+  border-top: 2px solid #eaeaea;
+  padding-top: 5px;
+}
+
+.description {
+  margin-top: 0;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.article-meta-details {
+  border-top: 2px solid #eaeaea;
+  margin-top: 12px;
+}
+
+.article-body {
+  border-top: 2px solid #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.listing {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer {
+  margin-top: 50px;
+  padding-top: 5px;
+  border-top: 2px solid #eaeaea;
+  color: #777;
+}
+
+.footer span:hover {
+  color: #222;
+}
+
+.footer small {
+  float: left;
+}
+
+.footer ul {
+  float: right;
+  list-style: none;
+}
+
+.footer ul li {
+  float: left;
+  margin-left: 150px;
+}

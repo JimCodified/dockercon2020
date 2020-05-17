@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  app:
+    build:
+      context: .
+      args:
+        - http-proxy: http://www-proxy.us.oracle.com:80
+        - https_proxy: http://www-proxy.us.oracle.com:80
+    ports:
+      - "3000:3000"
+    links:
+      - redis 
+
+  redis:
+    image: redis
+    ports:
+      - "6379:6379"
+
+           
+
