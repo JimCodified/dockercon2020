@@ -1,4 +1,5 @@
-FROM ruby:2.7.0-slim-buster
+FROM ruby:2.5.1
+
 
 RUN apt-get update &&\
     apt-get install -y git vim &&\
