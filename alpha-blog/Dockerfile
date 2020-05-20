@@ -14,7 +14,8 @@ COPY . .
 
 ENV BUNDLER_VERSION 2.0.2
 
-RUN bundle install &&\
+RUN bundle update &&\
+    bundle install &&\
     rails db:setup &&\
     rails db:migrate
 
