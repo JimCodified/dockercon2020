@@ -1,3 +1,5 @@
+# Snyk's _Your container has vulnerabilities...now what?_ Session at DockerCon 2020
+
 ## Four steps to fixing container image vulnerabilities
 
 1. Make sure your code and dependencies are secure
