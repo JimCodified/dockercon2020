@@ -195,4 +195,4 @@ snyk test --docker jimcodifed/dockercon2020:alpha-blog.lastone --file=Dockerfile
 
 Now we're down to 129 vulns, with no High risk.
 
-Setting up the multi-stage build and copying over Gems is deeper than we'll go here, but again, there's a decent chance we could use those methods to make our container even smaller and get rid of many, if not all, the vulns from those dev libraries we're installing. But that's an exercise for a different day.
+Setting up the multi-stage build and copying over Gems is deeper than we'll go here, but again, there's a decent chance we could use those methods to make our container even smaller and get rid of many, if not all, the vulns from those dev libraries we're installing. But that's an exercise for a different day. There's a [great article on Medium](https://medium.com/@lemuelbarango/ruby-on-rails-smaller-docker-images-bff240931332) by Lemuel Barango about this, specifically for Ruby, if you're curious.
