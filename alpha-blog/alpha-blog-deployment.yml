@@ -1,3 +1,21 @@
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: alpha-blog-service
+  labels:
+    app: alpha-blog
+spec:
+  ports:
+  - name: http
+    port: 3000
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app.kubernetes.io/instance: alpha-blog
+    app.kubernetes.io/name: alpha-blog
+  type: LoadBalancer
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -9,13 +27,15 @@ spec:
     metadata:
       name: alpha-blog-pod
       labels:
-        app: alpha-blog
+        app.kubernetes.io/instance: alpha-blog
+        app.kubernetes.io/name: alpha-blog
     spec:
       containers:
         - name: alpha-blog-container
-          image: avantaditya/alpha-blog
+          image: jimcodified/dockercon2020:alpha-blog.orig
 
   replicas: 3
   selector:
     matchLabels:
-      app: alpha-blog      
+      app.kubernetes.io/instance: alpha-blog
+      app.kubernetes.io/name: alpha-blog    
