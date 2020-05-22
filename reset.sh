@@ -4,4 +4,5 @@ git checkout demo2start -- alpha-blog/Dockerfile.rubyfixes
 git checkout demo2start -- alpha-blog/Gemfile
 git checkout demo2start -- alpha-blog/Gemfile.lock
 git add -A
-git commit -m $()
+git commit -m "reset $(date +'%y%m%d-%H%M')"
+git push origin master
