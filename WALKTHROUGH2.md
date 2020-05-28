@@ -195,4 +195,10 @@ snyk test --docker jimcodifed/dockercon2020:alpha-blog.lastone --file=Dockerfile
 
 Now we're down to 129 vulns, with no High risk.
 
-Setting up the multi-stage build and copying over Gems is deeper than we'll go here, but again, there's a decent chance we could use those methods to make our container even smaller and get rid of many, if not all, the vulns from those dev libraries we're installing. But that's an exercise for a different day. There's a [great article on Medium](https://medium.com/@lemuelbarango/ruby-on-rails-smaller-docker-images-bff240931332) by Lemuel Barango about this, specifically for Ruby, if you're curious.
+---
+
+## Cleaning up the last few vulns with multi-stage
+
+Setting up the multi-stage build and copying over Gems is deeper than we could go in the live demo. But of the 129 vulns that were left there were 75 from our dev libraries. We can use multi-stage builds to get those dev libraries out of the image, which drastically reduces the size and knocks out those 75 vulns. This is something you'd probably do for production because these libraries shouldn't be needed there. 
+
+I've included a multi-stage build example in the `multistage` branch of this repo (`git checkout multistage`). I figured this out using this [great article on Medium](https://medium.com/@lemuelbarango/ruby-on-rails-smaller-docker-images-bff240931332) by Lemuel Barango about this, specifically for Ruby, if you're curious. In that branch you'll find `Dockerfile.multi` which will show you how to remove the dev libraries. Note that this still builds for the Ruby development target - if you were truly doing this for production you'd need to setup secrets, a real database, and all that, which is way beyond our learning here.
